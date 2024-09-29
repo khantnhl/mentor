@@ -17,6 +17,7 @@ const corsOption = {
 app.use(cors(corsOption))
 app.use('/',router)
 
+//server runs on 4000
 const PORT = 4000
 const server = app.listen(PORT, () => {
     console.log(`Server Running on PORT: ${PORT}`)
