@@ -6,7 +6,7 @@ export default function Header(props) {
             <p><img src={logo} alt='logo' height="25"/></p>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/contact-us">Contact</a></li>
+                <li><a href="/">Contact</a></li>
             </ul>
         </nav>
     )
