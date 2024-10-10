@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.nav-bar {
+  background-color: #001f3f;  /* Darker navy blue */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;  /* White text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.nav-bar p {
+  margin: 0;
+}
+
+.nav-bar img {
+  vertical-align: middle;
+  padding: 5px;  /* Seamlessly integrate with nav bar */
+  background-color: #001f3f;  /* Make sure the background matches */
+  border-radius: 5px;  /* Smooth border for the logo */
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;  /* Space between list items */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  display: inline;
+}
+
+.nav-bar ul li a {
+  color: white;  /* White text color for links */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #004080;  /* Button-style background */
+  border: none;
+  border-radius: 5px;  /* Rounded corners for buttons */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.nav-bar ul li a:hover {
+  background-color: #0059b3;  /* Lighter blue on hover */
+  color: #e0e0e0;  /* Slightly lighter text on hover */
+}
+
+.nav-bar ul li a:active {
+  background-color: #003366;  /* Darker blue when clicked */
+}
+
+
+/*Footer*/
+
+.footer {
+  background-color: #001f3f;  /* Dark navy blue */
+  color: white;
+  text-align: center;
+  padding: 30px 0;  /* Increased padding for larger space */
+  width: 100%;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;  /* Slightly larger font for better readability */
+  position: relative;
+}
+
+.footer p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e0e0e0;  /* Slightly lighter color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+      font-size: 14px;
+  }
+
+  .social-icons a {
+      margin: 0 10px;
+  }
+} 
